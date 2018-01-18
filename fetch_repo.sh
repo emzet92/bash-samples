@@ -10,7 +10,6 @@ API_QUERY=$(curl -s $API_URL)
 
 RESPONSE_CODE=$(curl -s -o /dev/null -w '%{http_code}' $API_URL;)
 
-
 if [ -z "$1" ]; 
 then
 	echo "Type repo name as parameter"
