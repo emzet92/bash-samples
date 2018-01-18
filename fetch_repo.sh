@@ -16,9 +16,9 @@ then
 else
 	if [[ $RESPONSE_CODE -eq 200 ]]; 
 	then
-		echo "Fetching data for $1 Response code: $RESPONSE_CODE"
+		echo "Fetching data for $1"
 		echo $API_QUERY | jq -c '.[] | .name'
 	else
-		echo "Repository not found :("
+		echo "Repository not found :( Response code: $RESPONSE_CODE"
 	fi
 fi
