@@ -4,7 +4,7 @@
 
 clear
 
-API_URL='https://api.github.com/users/'$1'/repos?sort=updated&per_page=1'
+API_URL="https://api.github.com/users/$1/repos?sort=updated&per_page=1"
 
 API_QUERY=$(curl -s $API_URL)
 
